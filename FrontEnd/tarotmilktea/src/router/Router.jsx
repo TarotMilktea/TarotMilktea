@@ -1,6 +1,7 @@
 import React from 'react';
 import {Routes, Route, Outlet } from 'react-router-dom'
-import Home from '../testcom/Home'
+import Home from '../components/pages/Home'
+// 테스트
 import Abc from '../testcom/abc/ABC';
 import Nike from '../testcom/abc/NIKE';
 import Product1 from '../testcom/abc/Product1';
@@ -13,7 +14,8 @@ function Router() {
   return (
     <Routes>
       <Route path="/" element={<Home/>} exact />
-      <Route path="/home" element={<Home/>} />
+      
+      {/* 테스트 */}
       <Route path="/abc" element={<Abc/>} />
       <Route path="/abc/nike" element={<Nike/>} />
       <Route path="/abc/nike/product1" element={<Product1/>} />
